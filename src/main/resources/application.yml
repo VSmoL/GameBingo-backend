@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+application:
+  bingo:
+    database:
+      url: jdbc:postgresql://localhost:5432/bingo
+      username: bingo_user
+      password: Bingo90
+
+spring:
+  application:
+    name: game-info-service
+  jpa:
+    hibernate:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bingo
+    username: bingo_user
+    password: Bingo90
+    driver-class-name: org.postgresql.Driver
