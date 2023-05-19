@@ -12,7 +12,7 @@ import lombok.Setter;
 public class Game {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter @Setter private Integer id;
 
     @Column(nullable = false, unique = true)

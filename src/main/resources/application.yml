@@ -17,6 +17,7 @@ spring:
       ddl-auto: update
     show-sql: true
     generate-ddl: true
+    defer-datasource-initialization: true
   h2:
     console:
       enabled: true
@@ -25,3 +26,6 @@ spring:
     username: bingo_user
     password: Bingo90
     driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: never
